@@ -1,0 +1,24 @@
+<body>
+    <h1>Cajero</h1>
+
+    Billetes de 500: {{pesos[0]}}
+    <br> Billetes de 200: {{pesos[1]}}
+    <br> Billetes de 100: {{pesos[2]}}
+    <br> Billetes de 50: {{pesos[3]}}
+    <br>
+    <br>
+
+    <form [formGroup]="myForm" (ngSubmit)="submit()">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Ingresa la cantidad deseada</mat-label>
+            <input type="number" matInput placeholder="Cantidad" formControlName="cantidad">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary">Retirar</button>
+    </form>
+
+
+
+
+
+</body>
